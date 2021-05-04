@@ -21,8 +21,8 @@ table_columns = paste("Treatment",
 table_body = paste(table_columns, "\\\\" ," \\midrule")
 
 space = '\\\\[0pt]'
-table_stats = table_treatment_stats
-table_sterr_stats = table_treatment_stats_stderr
+table_stats = table_treatment_stats # Table with the coefficient estimates
+table_sterr_stats = table_treatment_stats_stderr # Table with the standard errors
 #Fill table body
 for(i in 1:nrow(table_stats)){
   row = c()
